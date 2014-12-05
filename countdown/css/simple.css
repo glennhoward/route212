@@ -1,0 +1,21 @@
+body {
+  width: 900px;
+  margin-left: 10px;
+}
+
+#due-details, .alert {
+  display: none;
+}
+
+.nav {
+  margin-bottom: 10px;
+}
+
+#main-due-date, #current-week, .alert, .btn {
+  margin-top: 10px;
+}
+
+#gist-source {
+  display: none;
+  margin-top: 10px;
+}
