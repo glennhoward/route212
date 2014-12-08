@@ -3,6 +3,7 @@
 <head>
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
   <meta content="utf-8" http-equiv="encoding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/simple.css">
@@ -10,31 +11,33 @@
   <title>:: Countdown ::</title>
 </head>
 <body>
-  <h3>Countdown to Due Date</h3>
+  <div class="container-fluid">
+    <h3>Countdown to Due Date</h3>
 
-  <ul class="nav nav-pills">
-    <li id="demo" role="presentation" class="active"><a href="#">App Demo</a></li>
-    <li id="code" role="presentation"><a href="#">Source Code</a></li>
-  </ul>
+    <ul class="nav nav-pills">
+      <li id="demo" role="presentation" class="active"><a href="#">App Demo</a></li>
+      <li id="code" role="presentation"><a href="#">Source Code</a></li>
+    </ul>
 
-  <div id="app-demo">
-    <input type="text" id="due-date-input" class="form-control" placeholder="Select date">
-    <div class="countdown-controls">
-      <button type="button" id="calculate-due-date" class="btn btn-info">What is my Due Date</button>
-      <button type="button" id="reset-due-date" class="btn btn-danger">Reset</button>
+    <div id="app-demo">
+      <input type="text" id="due-date-input" class="form-control" placeholder="Select date">
+      <div class="countdown-controls">
+        <button type="button" id="calculate-due-date" class="btn btn-info">What is my Due Date</button>
+        <button type="button" id="reset-due-date" class="btn btn-danger">Reset</button>
+      </div>
+
+      <div class="alert alert-danger" role="alert">Please select  a due date.</div>
+
+      <div id="due-details">
+        <h4 id="current-week"></h4>
+        <h4 id="main-due-date"></h4>
+      </div>
     </div>
 
-    <div class="alert alert-danger" role="alert">Please select  a due date.</div>
-
-    <div id="due-details">
-      <h4 id="current-week"></h4>
-      <h4 id="main-due-date"></h4>
+    <div id="gist-source">
+      <h4>Gist Source for this app</h4>
+      <script src="https://gist.github.com/glennhoward/3d8c6b0f7781d2288ce5.js"></script>
     </div>
-  </div>
-
-  <div id="gist-source">
-    <h4>Gist Source for this app</h4>
-    <script src="https://gist.github.com/glennhoward/3d8c6b0f7781d2288ce5.js"></script>
   </div>
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
